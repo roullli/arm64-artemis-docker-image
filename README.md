@@ -16,3 +16,8 @@ navigat to the docker folder and copy the Dockerfile and launch.sh inside the fo
 then build the docker image by
 
 docker build . 
+
+
+note: you can follow the whole journey that I took in this issue:
+
+https://github.com/eclipse/hono/issues/1887
