@@ -7,8 +7,12 @@ https://github.com/apache/activemq-artemis/tree/master/artemis-docker
 
 1st step
 
-clone the github repository into your RPi
+Download the latest version of Apache Artemis
 
-git clone https://github.com/apache/activemq-artemis.git
+Extarct it and create a docker folder inside.
 
-then in
+navigat to the docker folder and copy the Dockerfile and launch.sh inside the folder.
+
+then build the docker image by
+
+docker build . 
