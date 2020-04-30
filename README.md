@@ -1,23 +1,13 @@
 # arm64-artemis-docker-image
 Here is the description how to build docker image arm64 architecture in order to run on Raspberry Pi
 
-I used this link to build the docker image but with a bit of modifications: (officialy from Apache)
+I used these two links to build the docker image but with a bit of modifications: (officialy from Apache)
 
-https://github.com/apache/activemq-artemis/tree/master/artemis-docker
+https://github.com/EnMasseProject/artemis-docker-base
+https://github.com/EnMasseProject/java-docker-base
 
-1st step
+Since the Dockerfile which were used in the first link was not compatible with arm64, I used the second link to build the java-base image.
 
-Download the latest version of Apache Artemis
+So after cloning the first link, I copied the scripts folder to the artemis-base folder, then modified the Dockerfile as you can find it here.
 
-Extarct it and create a docker folder inside.
-
-navigat to the docker folder and copy the Dockerfile and launch.sh inside the folder.
-
-then build the docker image by
-
-docker build . 
-
-
-note: you can follow the whole journey that I took in this issue:
-
-https://github.com/eclipse/hono/issues/1887
+Then the rest is same as first link.
